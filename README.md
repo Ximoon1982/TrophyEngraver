@@ -1,51 +1,24 @@
 # Trophy Engraver
 
-Filesystem-backed web application for creating reusable engraved trophy artwork.
+Filesystem-backed PHP/JS trophy engraving application, intended for deployment under:
 
-## Deployment
+`/PromoteToKing/trophy-engraver/`
 
-The project is intended to be deployed under:
+## Pages
+- `index.php` — engraver
+- `library.php` — artwork library
+- `settings.php` — saved/pre-configured settings
 
-```
-/PromoteToKing/trophy-engraver/
-```
+## Storage
+Bundled default artwork lives in `assets/default-artworks/` and is read-only from the UI. User-uploaded originals, thumbnails, and saved profiles live under `data/` and are intentionally ignored by Git.
 
-The application is otherwise independent from the Promote to King codebase.
-
-## Storage model
-
-Original trophy images are stored unchanged on disk. Metadata and engraving defaults are stored as JSON profiles.
-
-```
-data/
-  trophies/      Original uploaded trophy images
-  thumbs/        Generated library thumbnails
-  profiles/      Trophy definitions and engraving-zone metadata
-  engravings/    Saved engraving jobs
-  library.json   Trophy library index
-```
-
-The data directory must be writable by PHP. Runtime data is intentionally excluded from Git apart from placeholder files.
-
-## Initial capabilities
-
-- filesystem-backed trophy library
-- PNG/JPEG/WebP upload
-- search/sort library explorer
-- manual engraving-zone selection on canvas
-- three engraving lines with independent sizes
-- line spacing and X/Y offsets
-- fine nudging
-- flat/cylindrical modes with curve strength
-- font and metal/color presets
-- save trophy defaults
-- save/load engraving jobs
-- PNG export in the source image dimensions
+The app initializes new engraving text as:
+1. `Team Name`
+2. `Competition`
+3. `season/date`
 
 ## Requirements
-
 - PHP 8.1+
-- GD recommended for thumbnail generation
+- Fileinfo
+- GD recommended for uploaded-artwork thumbnails
 - writable `data/` tree
-
-No database is required for the initial version.
