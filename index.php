@@ -11,24 +11,23 @@ $config = require __DIR__ . '/config.php';
 </head>
 <body>
 <header class="topbar">
-  <div><h1>Trophy Engraver</h1><p>Filesystem-backed trophy library and engraver</p></div>
-  <button id="uploadBtn" class="primary">Upload trophy</button>
-  <input id="uploadInput" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+  <div><h1>Trophy Engraver</h1><p>Create and export engraved trophy artwork</p></div>
+  <nav class="nav">
+    <a class="active" href="index.php">Engraver</a>
+    <a href="library.php">Artwork library</a>
+    <a href="settings.php">Saved settings</a>
+  </nav>
+  <button id="newTrophyBtn" class="primary">New trophy</button>
 </header>
 
-<main class="layout">
-  <aside class="library">
-    <div class="library-head">
-      <h2>Library</h2>
-      <input id="search" type="search" placeholder="Search trophies">
-      <select id="sort"><option value="updated">Recently updated</option><option value="name">Name</option><option value="newest">Newest</option><option value="oldest">Oldest</option></select>
-    </div>
-    <div id="libraryGrid" class="library-grid"></div>
-  </aside>
-
-  <section class="workspace">
+<main class="engraver-page">
+  <section class="workspace workspace-full">
     <div class="stage-wrap">
-      <div id="emptyState" class="empty">Upload or select a trophy.</div>
+      <div id="emptyState" class="empty">
+        <h2>No trophy selected</h2>
+        <p>Create a new trophy to begin.</p>
+        <button id="emptyNewBtn" class="primary">New trophy</button>
+      </div>
       <canvas id="canvas"></canvas>
       <div class="stage-actions">
         <button id="zoneMode">Draw engraving zone</button>
@@ -54,16 +53,31 @@ $config = require __DIR__ . '/config.php';
         <label>Material <select id="material"><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option><option value="dark">Dark</option><option value="light">Light</option></select></label>
         <label>Projection <select id="projection"><option value="flat">Flat</option><option value="cylindrical">Cylindrical</option></select></label>
         <label>Curve <input id="curve" type="range" min="-100" max="100" step="1" value="0"></label>
-        <button id="saveDefaults" class="primary">Save trophy defaults</button>
+        <button id="saveDefaults" class="primary">Save settings for this trophy</button>
       </div>
       <div class="panel">
         <h2>Selected trophy</h2>
         <div id="selectedMeta">None</div>
-        <div class="row"><button id="renameBtn">Rename</button><button id="deleteBtn" class="danger">Delete</button></div>
       </div>
     </div>
   </section>
 </main>
+
+<div id="newDialog" class="modal-backdrop" hidden>
+  <div class="modal">
+    <div class="modal-head"><div><h2>New trophy</h2><p>Choose how to start.</p></div><button id="closeNewDialog">×</button></div>
+    <div class="choice-grid">
+      <button class="choice" id="chooseConfigured"><strong>Pre-configured trophy</strong><span>Use artwork with a saved engraving zone and settings.</span></button>
+      <button class="choice" id="chooseUpload"><strong>Upload a file</strong><span>Add a new PNG, JPEG or WebP artwork.</span></button>
+      <button class="choice" id="chooseStored"><strong>Stored image</strong><span>Open artwork already present in the library.</span></button>
+    </div>
+    <div id="pickerArea" class="picker-area" hidden>
+      <div class="picker-tools"><input id="pickerSearch" type="search" placeholder="Search"><button id="pickerBack">Back</button></div>
+      <div id="pickerGrid" class="library-grid wide"></div>
+    </div>
+  </div>
+</div>
+<input id="uploadInput" type="file" accept="image/png,image/jpeg,image/webp" hidden>
 <script src="assets/app.js"></script>
 </body>
 </html>
