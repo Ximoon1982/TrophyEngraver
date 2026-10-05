@@ -1,0 +1,10 @@
+*
+!.gitignore
+!trophies/
+!trophies/.gitkeep
+!thumbs/
+!thumbs/.gitkeep
+!profiles/
+!profiles/.gitkeep
+!engravings/
+!engravings/.gitkeep
