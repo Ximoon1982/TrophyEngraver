@@ -1,19 +1,4 @@
-<?php
-declare(strict_types=1);
-$config = require __DIR__ . '/config.php';
-?><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Artwork library · <?= htmlspecialchars($config['app_name']) ?></title><link rel="stylesheet" href="assets/style.css"></head>
-<body data-page="library">
-<header class="topbar">
-  <div><h1>Artwork library</h1><p>Stored trophy artwork</p></div>
-  <nav class="nav"><a href="index.php">Engraver</a><a class="active" href="library.php">Artwork library</a><a href="settings.php">Saved settings</a></nav>
-  <button id="pageUploadBtn" class="primary">Upload artwork</button>
-</header>
-<main class="page-shell">
-  <div class="page-tools"><input id="pageSearch" type="search" placeholder="Search artwork"><select id="pageSort"><option value="updated">Recently updated</option><option value="name">Name</option><option value="newest">Newest</option><option value="oldest">Oldest</option></select></div>
-  <div id="pageGrid" class="catalog-grid"></div>
-</main>
-<input id="pageUploadInput" type="file" accept="image/png,image/jpeg,image/webp" hidden>
-<script src="assets/catalog.js"></script>
-</body></html>
+<?php declare(strict_types=1); $config=require __DIR__.'/config.php'; ?>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Artwork library · <?= htmlspecialchars($config['app_name']) ?></title><link rel="stylesheet" href="assets/style.css"><style>body{overflow:auto}.catalogShell{padding:18px;max-width:1500px;margin:auto}.catalogTools{display:flex;gap:8px;margin-bottom:14px}.catalogTools input,.catalogTools select{background:#10151c;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px}.catalogTools input{flex:1}.catalogGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.catalogCard{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}.catalogCard img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#0a0e13}.catalogBody{padding:10px}.catalogBody strong{display:block}.catalogBody span{font-size:11px;color:var(--muted)}.catalogActions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.catalogActions a{text-decoration:none}.defaultTag{font-size:10px;padding:3px 6px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}</style></head><body data-page="library">
+<header class="topbar"><div class="brand"><h1>Artwork library</h1><p>Bundled defaults and uploaded artwork.</p></div><nav class="nav"><a href="index.php">Engraver</a><a class="active" href="library.php">Artwork library</a><a href="settings.php">Saved settings</a></nav><div class="toolbar"><label class="btn primary">Upload artwork<input id="pageUploadInput" class="hidden" type="file" accept="image/png,image/jpeg,image/webp"></label></div></header>
+<main class="catalogShell"><div class="catalogTools"><input id="pageSearch" type="search" placeholder="Search artwork"><select id="pageSort"><option value="name">Name</option><option value="updated">Recently updated</option></select></div><div id="pageGrid" class="catalogGrid"></div></main><script src="assets/catalog.js"></script></body></html>
