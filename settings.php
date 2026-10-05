@@ -1,17 +1,4 @@
-<?php
-declare(strict_types=1);
-$config = require __DIR__ . '/config.php';
-?><!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Saved settings · <?= htmlspecialchars($config['app_name']) ?></title><link rel="stylesheet" href="assets/style.css"></head>
-<body data-page="settings">
-<header class="topbar">
-  <div><h1>Saved settings</h1><p>Pre-configured trophies with saved engraving zones and defaults</p></div>
-  <nav class="nav"><a href="index.php">Engraver</a><a href="library.php">Artwork library</a><a class="active" href="settings.php">Saved settings</a></nav>
-</header>
-<main class="page-shell">
-  <div class="page-tools"><input id="pageSearch" type="search" placeholder="Search saved settings"></div>
-  <div id="pageGrid" class="catalog-grid"></div>
-</main>
-<script src="assets/catalog.js"></script>
-</body></html>
+<?php declare(strict_types=1); $config=require __DIR__.'/config.php'; ?>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Saved settings · <?= htmlspecialchars($config['app_name']) ?></title><link rel="stylesheet" href="assets/style.css"><style>body{overflow:auto}.catalogShell{padding:18px;max-width:1500px;margin:auto}.catalogTools{display:flex;gap:8px;margin-bottom:14px}.catalogTools input{flex:1;background:#10151c;color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px}.catalogGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.catalogCard{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}.catalogCard img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#0a0e13}.catalogBody{padding:10px}.catalogBody strong{display:block}.catalogBody span{font-size:11px;color:var(--muted)}.catalogActions{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.catalogActions a{text-decoration:none}</style></head><body data-page="settings">
+<header class="topbar"><div class="brand"><h1>Saved settings</h1><p>Pre-configured artworks with saved engraving zones and rendering defaults.</p></div><nav class="nav"><a href="index.php">Engraver</a><a href="library.php">Artwork library</a><a class="active" href="settings.php">Saved settings</a></nav></header>
+<main class="catalogShell"><div class="catalogTools"><input id="pageSearch" type="search" placeholder="Search saved settings"></div><div id="pageGrid" class="catalogGrid"></div></main><script src="assets/catalog.js"></script></body></html>
