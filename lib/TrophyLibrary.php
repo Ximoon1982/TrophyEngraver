@@ -118,6 +118,41 @@ final class TrophyLibrary
         $this->writeJson($this->indexFile, $rows);
     }
 
+    public function configured(): array
+    {
+        $out = [];
+        foreach ($this->all() as $row) {
+            $profile = $this->readJson($this->profilePath((string)$row['id']), null);
+            if (is_array($profile) && !empty($profile['zone'])) {
+                $row['profile_updated_at'] = $profile['updated_at'] ?? null;
+                $out[] = $row;
+            }
+        }
+        return $out;
+    }
+
+    public function profiles(): array
+    {
+        $out = [];
+        foreach ($this->all() as $row) {
+            $profile = $this->readJson($this->profilePath((string)$row['id']), null);
+            if (is_array($profile) && !empty($profile['zone'])) {
+                $out[] = [
+                    'id' => $row['id'],
+                    'name' => $row['name'],
+                    'thumbnail' => $row['thumbnail'] ?? $row['file'],
+                    'file' => $row['file'],
+                    'width' => $row['width'],
+                    'height' => $row['height'],
+                    'updated_at' => $profile['updated_at'] ?? $row['updated_at'],
+                    'profile' => $profile,
+                ];
+            }
+        }
+        usort($out, fn($a, $b) => strcmp((string)$b['updated_at'], (string)$a['updated_at']));
+        return $out;
+    }
+
     public function getProfile(string $id): array
     {
         if (!$this->get($id)) throw new RuntimeException('Trophy not found.');
@@ -170,9 +205,9 @@ final class TrophyLibrary
             'offsetX' => 0,
             'offsetY' => 0,
             'lines' => [
-                ['text' => '', 'size' => 42],
-                ['text' => '', 'size' => 32],
-                ['text' => '', 'size' => 26],
+                ['text' => 'Team Name', 'size' => 42],
+                ['text' => 'Competition', 'size' => 32],
+                ['text' => 'season/date', 'size' => 26],
             ],
         ];
     }
