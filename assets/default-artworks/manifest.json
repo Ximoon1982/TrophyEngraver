@@ -8,7 +8,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-02",
@@ -19,7 +21,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-03",
@@ -30,7 +34,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-04",
@@ -41,7 +47,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-05",
@@ -52,7 +60,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-06",
@@ -63,7 +73,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-07",
@@ -74,7 +86,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-08",
@@ -85,7 +99,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-09",
@@ -96,7 +112,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-10",
@@ -107,7 +125,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-11",
@@ -118,7 +138,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-12",
@@ -129,7 +151,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-13",
@@ -140,7 +164,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-14",
@@ -151,7 +177,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-15",
@@ -162,7 +190,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-16",
@@ -173,7 +203,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-17",
@@ -184,7 +216,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-18",
@@ -195,7 +229,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-19",
@@ -206,7 +242,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-20",
@@ -217,7 +255,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-trophy-21",
@@ -228,7 +268,9 @@
     "readonly": true,
     "kind": "trophy",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-medal-01",
@@ -239,7 +281,9 @@
     "readonly": true,
     "kind": "medal",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-medal-02",
@@ -250,7 +294,9 @@
     "readonly": true,
     "kind": "medal",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-medal-03",
@@ -261,7 +307,9 @@
     "readonly": true,
     "kind": "medal",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-medal-04",
@@ -272,7 +320,9 @@
     "readonly": true,
     "kind": "medal",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   },
   {
     "id": "default-medal-05",
@@ -283,6 +333,8 @@
     "readonly": true,
     "kind": "medal",
     "created_at": "2026-10-05T00:00:00Z",
-    "updated_at": "2026-10-05T00:00:00Z"
+    "updated_at": "2026-10-05T00:00:00Z",
+    "width": 800,
+    "height": 1000
   }
 ]
