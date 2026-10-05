@@ -26,6 +26,10 @@ try {
     switch ($action) {
         case 'list':
             ok($lib->all());
+        case 'configured':
+            ok($lib->configured());
+        case 'profiles':
+            ok($lib->profiles());
         case 'upload':
             if ($_SERVER['REQUEST_METHOD'] !== 'POST') fail('POST required', 405);
             ok($lib->upload($_FILES['image'] ?? [], $_POST['name'] ?? null));
